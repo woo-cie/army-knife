@@ -1,0 +1,53 @@
+---
+extends:
+  - react-app
+  - react-app/jest
+  - prettier
+plugins:
+  - import
+env:
+  es6: true
+  browser: true
+  jest: true
+  node: true
+settings:
+  react:
+    version: detect
+parserOptions:
+  sourceType: module
+  ecmaFeatures:
+    jsx: true
+rules:
+  react/react-in-jsx-scope: off
+  react/display-name: off
+  react/prop-types: off
+  no-console:
+    - warn
+    - allow:
+        - warn
+        - error
+  sort-imports: 0
+  import/order:
+    - error
+    - alphabetize:
+        order: asc
+      newlines-between: always
+      groups:
+        - builtin
+        - external
+        - internal
+        - parent
+        - sibling
+        - index
+      pathGroups:
+        - pattern: '{components,config,containers,hooks,stores}/**'
+          group: internal
+      pathGroupsExcludedImportTypes: []
+  import/newline-after-import:
+    - error
+    - count: 1
+overrides:
+  - files:
+      - '**/*.stories.*'
+    rules:
+      import/no-anonymous-default-export: off
