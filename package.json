@@ -1,5 +1,5 @@
 {
-  "name": "react-template",
+  "name": "army-knife",
   "version": "0.1.0",
   "private": true,
   "resolutions": {
@@ -28,7 +28,7 @@
     "zod": "^3.7.1"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "cross-env BROWSER=none react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
@@ -54,7 +54,9 @@
     "@storybook/node-logger": "^6.3.6",
     "@storybook/preset-create-react-app": "^3.2.0",
     "@storybook/react": "^6.3.6",
+    "@tauri-apps/cli": "^1.0.0-rc.5",
     "@types/styled-components": "^5.1.12",
+    "cross-env": "^7.0.3",
     "eslint-config-prettier": "^8.3.0",
     "prettier": "^2.3.2"
   },
