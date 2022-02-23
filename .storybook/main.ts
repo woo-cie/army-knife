@@ -1,4 +1,7 @@
 module.exports = {
+  core: {
+    builder: "webpack5",
+  },
   stories: ["../src"],
   addons: [
     "@storybook/addon-links",
