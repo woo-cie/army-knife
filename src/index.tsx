@@ -1,13 +1,20 @@
+import { createTheme, ThemeProvider } from "@mui/material/styles";
 import React from "react";
 import ReactDOM from "react-dom";
+import { RecoilRoot } from "recoil";
 
-import "./index.css";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
+const theme = createTheme();
+
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <RecoilRoot>
+      <ThemeProvider theme={theme}>
+        <App />
+      </ThemeProvider>
+    </RecoilRoot>
   </React.StrictMode>,
   document.getElementById("root")
 );

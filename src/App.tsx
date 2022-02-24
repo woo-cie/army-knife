@@ -1,30 +1,9 @@
-import { RecoilRoot } from "recoil";
+import { styled } from "@mui/material/styles";
 
-import logo from "./logo.svg";
-
-import "./App.css";
+const Container = styled("div")({ height: "100vh", width: "100vw" });
 
 function App() {
-  return (
-    <RecoilRoot>
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.tsx</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
-      </div>
-    </RecoilRoot>
-  );
+  return <Container>aaa</Container>;
 }
 
 export default App;
