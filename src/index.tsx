@@ -6,7 +6,7 @@ import { RecoilRoot } from "recoil";
 import App from "./App";
 import reportWebVitals from "./reportWebVitals";
 
-const theme = createTheme();
+const theme = createTheme({});
 
 ReactDOM.render(
   <React.StrictMode>
